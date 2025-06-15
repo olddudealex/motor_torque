@@ -12,7 +12,7 @@ This project is a Python-based interactive visualizer for the **torque-slip char
   - Frequency-dependent $R_2(s)$ to account for rotor skin effect
 - Live sliders for:
   - $R_1, R_2, X_1, X_2, X_m$
-  - Frequency response shape parameters: $ n $, $ k $
+  - Frequency response shape parameters: $n$, $k$
 - Real-time overlay with **experimental data** from ABB datasheet
 - A second subplot shows $R_2(s)$ vs slip
 
@@ -28,7 +28,7 @@ _A screenshot of the GUI goes here_
 
 ## 📐 Core Equations
 
-### 1. **Torque equation (constant $ R_2 $)**
+### 1. **Torque equation (constant $R_2$)**
 $$
 T(s) = \frac{1}{\omega_s} \cdot \frac{n_{ph} \cdot |V_{1eq}|^2 \cdot \left(\frac{R_2}{s}\right)}{(R_{1eq} + \frac{R_2}{s})^2 + (X_{1eq} + X_2)^2}
 $$
