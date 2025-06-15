@@ -44,10 +44,10 @@ Z_{1eq} = \frac{j X_m (R_1 + j X_1)}{R_1 + j (X_1 + X_m)} = R_{1eq} + j X_{1eq}
 $$
 
 ### 4. **Frequency-dependent rotor resistance**
-To model the skin effect:  s
 $$
 R_2(s) = R_{2,\text{low}} + (R_{2,\text{high}} - R_{2,\text{low}}) \cdot \frac{s^n}{s^n + k}
 $$
+
 Where:
 - $ R_{2,\text{low}} $: rotor resistance at low frequency (steady state)
 - $ R_{2,\text{high}} $: effective rotor resistance at high frequency (startup)
