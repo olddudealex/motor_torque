@@ -8,13 +8,13 @@ This project is a Python-based interactive visualizer for the **torque-slip char
 
 - Simulates torque-slip curve from the **Thevenin equivalent model**
 - Two models:
-  - Constant rotor resistance $ R_2 $
-  - Frequency-dependent $ R_2(s) $ to account for rotor skin effect
+  - Constant rotor resistance $R_2$
+  - Frequency-dependent $R_2(s)$ to account for rotor skin effect
 - Live sliders for:
-  - $ R_1, R_2, X_1, X_2, X_m $
+  - $R_1, R_2, X_1, X_2, X_m$
   - Frequency response shape parameters: $ n $, $ k $
 - Real-time overlay with **experimental data** from ABB datasheet
-- A second subplot shows $ R_2(s) $ vs slip
+- A second subplot shows $R_2(s)$ vs slip
 
 ---
 
@@ -49,16 +49,17 @@ R_2(s) = R_{2,\text{low}} + (R_{2,\text{high}} - R_{2,\text{low}}) \cdot \frac{s
 $$
 
 Where:
-- $ R_{2,\text{low}} $: rotor resistance at low frequency (steady state)
-- $ R_{2,\text{high}} $: effective rotor resistance at high frequency (startup)
-- $ n $: sharpness of transition
-- $ k $: position of transition center
+- $R_{2,\text{low}}$: rotor resistance at low frequency (steady state)
+- $R_{2,\text{high}}$: effective rotor resistance at high frequency (startup)
+- $n$: sharpness of transition
+- $k$: position of transition center
 
 ### 5. **Slip calculation**
 $$
 s = \frac{n_s - n}{n_s}
 $$
+
 Where:
-- $ n_s $: synchronous speed (e.g., 1500 rpm)
-- $ n $: actual rotor speed
+- $n_s$: synchronous speed (e.g., 1500 rpm)
+- $n$: actual rotor speed
 
